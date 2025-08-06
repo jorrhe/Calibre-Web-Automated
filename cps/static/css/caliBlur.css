@@ -903,6 +903,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > d
 .glyphicon.glyphicon-download {
     font-size: large;
     padding-right: 10px;
+    padding-left:5px;
+    vertical-align: top
+}
+
+.glyphicon.glyphicon-download {
+    font-size: large;
+    padding-right: 10px;
     padding-left:3px;
     vertical-align: top
 }
