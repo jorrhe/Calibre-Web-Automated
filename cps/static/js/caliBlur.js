@@ -481,6 +481,14 @@ $(".home-btn > a").attr({
 })
     .addClass("home-btn-tooltip");
 
+$(".download-btn > a").attr({
+    "data-toggle": "tooltip",
+    "href": $(".navbar-brand")[0].href,
+    "title": $(document.body).attr("data-text"),    // Home
+    "data-placement": "bottom"
+})
+    .addClass("download-btn-tooltip");
+
 $(".plexBack > a").attr({
     "data-toggle": "tooltip",
     "title": $(document.body).attr("data-textback"), // Back
