@@ -52,7 +52,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           context: .
-          target: cwa-bd
           push: true
           build-args: |
             BUILD_VERSION=${{ steps.date.outputs.date }}-${{ github.sha }}
