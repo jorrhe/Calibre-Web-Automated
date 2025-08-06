@@ -787,7 +787,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
 }
 
 .download-btn > a:before {
-    content: "\E026"
+    content: "\EA6C"
 }
 
 body > div.navbar.navbar-default.navbar-static-top > div > div.download-btn > a:hover:before,
@@ -6072,6 +6072,10 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
         left: auto
     }
 
+    .download-btn {
+        right: 55px;
+    }
+
     .home-btn > a,.download-btn > a {
         height: 48px;
         line-height: 48px
@@ -6096,7 +6100,7 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
         box-shadow: none;
         -webkit-box-shadow: none;
         position: absolute;
-        right: 50px;
+        right: 100px;
         top: 0;
         height: 48px
     }
