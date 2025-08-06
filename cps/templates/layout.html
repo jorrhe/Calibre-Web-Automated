@@ -144,6 +144,12 @@
                   <span class="hidden-sm">{{_('Switch Theme')}}</span>
                 </a>
               </li>
+              <li class="cwa-download">
+                <a id="cwa-download" href="https://calibredl.jorgerm.dev" title="Switch Theme">
+                  <span class="glyphicon glyphicon-sunglasses"></span>
+                  <span class="hidden-sm">{{_('Switch Theme')}}</span>
+                </a>
+              </li>
               {% if current_user.role_upload() and g.allow_upload %}
                   <li>
                     <form id="form-upload" class="navbar-form" action="{{ url_for('edit-book.upload') }}" data-title="{{_('Uploading...')}}" data-footer="{{_('Close')}}" data-failed="{{_('Error')}}" data-message="{{_('Upload done, processing, please wait...')}}" method="post" enctype="multipart/form-data">
