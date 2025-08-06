@@ -52,7 +52,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           context: .
-          target: cwa-bd
           push: true
           build-args: |
             BUILD_VERSION=${{ steps.date.outputs.date }}-${{ github.sha }}
@@ -65,32 +64,6 @@ jobs:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           subject-digest: ${{ steps.push-main.outputs.digest }}
           push-to-registry: true
-
-      # Build and push tor image
-      - name: Extract metadata for tor image
-        id: meta-tor
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-tor
-          tags: |
-            type=raw,value=latest,enable={{is_default_branch}}
-            type=raw,value={{commit_date 'YYYYMMDD'}}
-            type=sha
-            type=ref,event=branch
-            type=ref,event=tag
-
-      - name: Build and push tor Docker image
-        id: push-tor
-        uses: docker/build-push-action@v5
-        with:
-          platforms: linux/amd64,linux/arm64
-          context: .
-          target: cwa-bd-tor
-          push: true
-          build-args: |
-            BUILD_VERSION=${{ steps.date.outputs.date }}-${{ github.sha }}
-          tags: ${{ steps.meta-tor.outputs.tags }}
-          labels: ${{ steps.meta-tor.outputs.labels }}
 
       - name: Generate artifact attestation for tor image
         uses: actions/attest-build-provenance@v2
