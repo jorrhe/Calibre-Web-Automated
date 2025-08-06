@@ -483,8 +483,7 @@ $(".home-btn > a").attr({
 
 $(".download-btn > a").attr({
     "data-toggle": "tooltip",
-    "href": $(".navbar-brand")[0].href,
-    "title": $(document.body).attr("data-text"),    // Home
+    "title": "Download",    // Download
     "data-placement": "bottom"
 })
     .addClass("download-btn-tooltip");

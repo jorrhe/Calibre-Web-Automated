@@ -760,6 +760,10 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     left: 10px
 }
 
+.download-btn {
+    left: 60px
+}
+
 .home-btn > a,.download-btn > a {
     color: rgba(255, 255, 255, .7);
     font-family: plex-icons-new, serif;
@@ -1121,7 +1125,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form:before {
     font-weight: 400;
     font-size: 14px;
     top: 18px;
-    left: 122px
+    left: 152px
 }
 
 #query {
@@ -1162,7 +1166,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > b
 }
 
 body > div.navbar.navbar-default.navbar-static-top > div > form {
-    margin-left: -140px;
+    margin-left: -90px;
     padding: 0;
     margin-top: 10px;
     margin-bottom: 10px
@@ -3824,7 +3828,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     padding: 0;
     position: absolute;
     width: 40px;
-    left: 50px
+    left: 100px
 }
 
 .plexBack > a {
@@ -8082,9 +8086,23 @@ div.comments[data-readmore] {
     display: none
 }
 
+.cwa-download {
+    float: left !important
+}
+
+#cwa-download {
+    height: 60px;
+    width: 50px;
+    padding: 20px 15px
+}
+
+#cwa-download > span.hidden-sm, #cwa-download > span.hidden-sm {
+    display: none
+}
+
 #form-upload .form-group .btn:after {
     content: "\EA13";
-    position: abdsolute;
+    position: absolute;
     font-family: plex-icons-new, serif;
     font-size: 8px;
     background: #3c444a;
@@ -8117,6 +8135,25 @@ div.comments[data-readmore] {
 }
 
 #cwa-switch-theme > .glyphicon-tasks {
+    background-color: hsla(0, 0%, 100%, .15);
+    border-radius: 50%
+}
+
+#cwa-download > .glyphicon-tasks::before {
+    content: "\EA6C";
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    font-family: plex-icons-new, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    speak: none;
+    font-size: 20px
+}
+
+#cwa-download > .glyphicon-tasks {
     background-color: hsla(0, 0%, 100%, .15);
     border-radius: 50%
 }
