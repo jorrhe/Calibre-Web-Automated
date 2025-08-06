@@ -900,6 +900,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > d
     vertical-align: top
 }
 
+.glyphicon.glyphicon-download {
+    font-size: large;
+    padding-right: 10px;
+    padding-left:5px;
+    vertical-align: top
+}
+
 span.hidden-sm.cwa_switch_theme {
     margin-bottom: 20px;
     display: inline-block;
@@ -8139,7 +8146,7 @@ div.comments[data-readmore] {
     border-radius: 50%
 }
 
-#cwa-download > .glyphicon-tasks::before {
+#cwa-download > .glyphicon-download::before {
     content: "\EA6C";
     text-transform: none;
     font-weight: 400;
@@ -8153,19 +8160,19 @@ div.comments[data-readmore] {
     font-size: 20px
 }
 
-#cwa-download > .glyphicon-tasks {
+#cwa-download > .glyphicon-download {
     background-color: hsla(0, 0%, 100%, .15);
     border-radius: 50%
 }
 
 @media only screen and (max-width: 767px) {
-    #form-upload .form-group .btn:before, #cwa-switch-theme > .glyphicon, #cwa-switch-theme > .glyphicon-tasks {
+    #form-upload .form-group .btn:before, #cwa-switch-theme > .glyphicon, #cwa-switch-theme > .glyphicon-tasks, #cwa-download > .glyphicon, #cwa-download > .glyphicon-tasks {
         -moz-osx-font-smoothing: grayscale;
         font-weight: 400;
         font-style: normal
     }
 
-    #main-nav > li.cwa-switch-theme, #main-nav > li.cwa-switch-theme {
+    #main-nav > li.cwa-switch-theme, #main-nav > li.cwa-switch-theme, #main-nav > li.cwa-download, #main-nav > li.cwa-download {
         height: 45px;
         width: 100%;
         min-height: 30px;
@@ -8186,7 +8193,7 @@ div.comments[data-readmore] {
         top: -60px
     }
 
-    #cwa-switch-theme, #cwa-switch-theme, .navigation > ul > li > a {
+    #cwa-switch-theme, #cwa-switch-theme, .navigation > ul > li > a,#cwa-download, #cwa-download, .navigation > ul > li > a {
         color: #fff;
         height: 45px;
         width: 100%;
@@ -8200,14 +8207,14 @@ div.comments[data-readmore] {
         margin-top: 72px
     }
 
-    #cwa-switch-theme, #cwa-switch-theme {
+    #cwa-switch-theme, #cwa-download {
         padding: 12px 15px;
         font-size: 13px;
         line-height: 1.71428571;
         overflow: hidden
     }
 
-    #cwa-switch-theme > .glyphicon, #cwa-switch-theme > .glyphicon-tasks {
+    #cwa-switch-theme > .glyphicon, #cwa-switch-theme > .glyphicon-tasks,#cwa-download > .glyphicon, #cwa-download > .glyphicon-tasks {
         position: relative;
         top: 0;
         font-family: 'Glyphicons Halflings', serif;
@@ -8218,6 +8225,11 @@ div.comments[data-readmore] {
     }
 
     #cwa-switch-theme > .glyphicon-tasks {
+        -webkit-font-smoothing: antialiased;
+        margin-right: 7px
+    }
+
+    #cwa-download > .glyphicon-tasks {
         -webkit-font-smoothing: antialiased;
         margin-right: 7px
     }
@@ -8240,7 +8252,7 @@ div.comments[data-readmore] {
         font-size: 16px
     }
 
-    #cwa-switch-theme > span.hidden-sm, #cwa-switch-theme > span.hidden-sm {
+    #cwa-switch-theme > span.hidden-sm, #cwa-switch-theme > span.hidden-sm, #cwa-download > span.hidden-sm, #cwa-download > span.hidden-sm {
         display: inline-block;
         line-height: 22px
     }
