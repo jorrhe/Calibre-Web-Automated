@@ -713,7 +713,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     padding: 0 20px
 }
 
-.home-btn, .home-btn > a{
+.home-btn, .home-btn > a {
     -webkit-font-variant-ligatures: normal;
     top: 0;
     cursor: pointer;
@@ -727,7 +727,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     -webkit-user-select: none
 }
 
-.form-control, .home-btn, .download.btn, .home-btn > a {
+.form-control, .home-btn, .home-btn > a {
     font-variant-east-asian: normal;
     font-stretch: 100%
 }
@@ -892,13 +892,6 @@ body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > d
 }
 
 #cwa-download .glyphicon.glyphicon-download {
-    font-size: large;
-    padding-right: 10px;
-    padding-left:5px;
-    vertical-align: top
-}
-
-.glyphicon.glyphicon-download {
     font-size: large;
     padding-right: 10px;
     padding-left:3px;
@@ -8103,7 +8096,7 @@ div.comments[data-readmore] {
 
 #form-upload .form-group .btn:after {
     content: "\EA13";
-    position: absolute;
+    position: abdsolute;
     font-family: plex-icons-new, serif;
     font-size: 8px;
     background: #3c444a;
@@ -8160,7 +8153,7 @@ div.comments[data-readmore] {
 }
 
 @media only screen and (max-width: 767px) {
-    #form-upload .form-group .btn:before, #cwa-switch-theme > .glyphicon, #cwa-switch-theme > .glyphicon-tasks, #cwa-download > .glyphicon, #cwa-download > .glyphicon-tasks {
+    #form-upload .form-group .btn:before, #cwa-switch-theme > .glyphicon, #cwa-switch-theme > .glyphicon-tasks, #cwa-download > .glyphicon, #cwa-download > .glyphicon-download {
         -moz-osx-font-smoothing: grayscale;
         font-weight: 400;
         font-style: normal
